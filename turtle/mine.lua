@@ -39,7 +39,7 @@ end
 function mine(x, y, z)
     for z_pos = 1, z do
         print(string.format('Striping vertical layer (%d/%d)', z_pos, z))
-        stripVerticalLayer()
+        stripVerticalLayer(x, y)
     end
     print('Returning home')
     turtle.turnRight()
