@@ -58,6 +58,7 @@ local function mine(x, y, z)
     for z_pos = 1, z do
         print(string.format('Striping vertical layer (%d/%d)', z_pos, z))
         stripVerticalLayer(x, y)
+        turtle.turnRight()
         goHome(x, 1, 1, z_pos)
     end
     print('Returning home')
